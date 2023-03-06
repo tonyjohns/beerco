@@ -1,3 +1,81 @@
 body {
-    background-color: whitesmoke;
+    background-color: #ffecc6;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(80, 80, 80);
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    margin-left: 350px;
+    margin-top: 50px;
+    margin-right: 350px;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+
+header #logo {
+    width: 150px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    padding-left: 70px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #da9100;
+}
+
+nav a:hover {
+    color: rgb(80, 80, 80);
+}
+
+/*Main Text*/
+
+main {
+    display: flex;
+    margin: 0 25%;
+}
+
+main .mainText {
+    display: flex;
+    background-color: #ffe5b3;
+    border-radius: 20px;
+}
+
+
+.mainText p {
+    margin: 5% 10%;
+}
+
+#mainImage {
+    max-width: 250px;
+    height: auto;
+    border-radius: 20px;
 }
