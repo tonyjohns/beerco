@@ -57,25 +57,80 @@ nav a:hover {
     color: rgb(80, 80, 80);
 }
 
+@media only screen and (max-width: 1200px) {
+    header {
+        display: flex;
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        justify-content: center;
+    }
+    
+    header #logo {
+        display: none;
+    }
+
+    nav li {
+        list-style: none;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    nav ul {
+        display: block;
+        padding-inline-start: 0;
+    }
+
+    nav li {
+        list-style: none;
+        padding-left: 0;
+    }
+}
+
 /*Main Text*/
 
 main {
     margin: 0% 25%;
 }
 
-main .mainText {
+main .mainTextAndImage {
     display: flex;
     background-color: #ffe5b3;
     border-radius: 20px;
 }
 
+.image {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+}
 
-.mainText p {
-    margin: 5% 10%;
+.mainTextAndImage p {
+    padding: 5% 5%;
 }
 
 #mainImage {
-    width: 250px;
-    height: auto;
-    border-radius: 20px;
+    max-width: 270px;
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+        margin: 0% 10%;
+    }
+    
+    main .mainTextAndImage {
+        display: block;
+        background-color: #ffe5b3;
+        border-radius: 20px;
+    }
+
+    .image {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+    }
 }
