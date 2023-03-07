@@ -1,5 +1,5 @@
 body {
-    background-color: #ffecc6;
+    background-color: #dddddd;
 }
 
 h1 {
@@ -9,7 +9,7 @@ h1 {
 
 p {
     font-family: 'Roboto Slab', serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     color: rgb(80, 80, 80);
 }
@@ -18,15 +18,15 @@ p {
 
 header {
     display: flex;
-    margin-left: 350px;
-    margin-top: 50px;
-    margin-right: 350px;
-    margin-bottom: 100px;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-bottom: 5%;
     justify-content: space-between;
 }
 
 header #logo {
-    width: 150px;
+    max-width: 150px;
 }
 
 nav {
@@ -35,6 +35,7 @@ nav {
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     text-decoration: none;
     align-items: center;
 }
@@ -59,8 +60,7 @@ nav a:hover {
 /*Main Text*/
 
 main {
-    display: flex;
-    margin: 0 25%;
+    margin: 0% 25%;
 }
 
 main .mainText {
@@ -75,7 +75,7 @@ main .mainText {
 }
 
 #mainImage {
-    max-width: 250px;
+    width: 250px;
     height: auto;
     border-radius: 20px;
 }
