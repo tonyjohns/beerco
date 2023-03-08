@@ -2,9 +2,22 @@ body {
     background-color: #dddddd;
 }
 
-h1 {
+h2 {
     font-family: 'Roboto Slab', serif;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(80, 80, 80);
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(80, 80, 80);
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 p {
@@ -14,14 +27,18 @@ p {
     color: rgb(80, 80, 80);
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 /*Header*/
 
 header {
     display: flex;
-    margin-left: 20%;
-    margin-top: 5%;
-    margin-right: 20%;
-    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-top: 2%;
+    margin-right: 15%;
+    margin-bottom: 2%;
     justify-content: space-between;
 }
 
@@ -42,7 +59,7 @@ nav ul {
 
 nav li {
     list-style: none;
-    padding-left: 70px;
+    padding-left: 60px;
 }
 
 nav a {
@@ -50,11 +67,11 @@ nav a {
     font-family: 'Roboto Slab', serif;
     font-size: 32px;
     font-weight: 700;
-    color: #da9100;
+    color: rgb(80, 80, 80);
 }
 
 nav a:hover {
-    color: rgb(80, 80, 80);
+    color: #da9100;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -64,7 +81,7 @@ nav a:hover {
         margin-top: 5%;
         margin-right: 5%;
         margin-bottom: 5%;
-        justify-content: center;
+        justify-content: start;
     }
     
     header #logo {
@@ -78,6 +95,15 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 700px) {
+    header {
+        display: flex;
+        margin-left: 15%;
+        margin-top: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        justify-content: start;
+    }
+
     nav ul {
         display: block;
         padding-inline-start: 0;
@@ -92,13 +118,19 @@ nav a:hover {
 /*Main Text*/
 
 main {
-    margin: 0% 25%;
+    margin: 0% 20%;
 }
 
 main .mainTextAndImage {
     display: flex;
+    align-items: start;
+}
+
+main .mainText {
+    display: block;
+    padding: 3% 5%;
     background-color: #ffe5b3;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .image {
@@ -108,23 +140,23 @@ main .mainTextAndImage {
     align-content: center;
 }
 
-.mainTextAndImage p {
-    padding: 5% 5%;
-}
-
 #mainImage {
-    max-width: 270px;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-left: 3%;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1600px) {
     main {
         margin: 0% 10%;
     }
     
     main .mainTextAndImage {
         display: block;
-        background-color: #ffe5b3;
-        border-radius: 20px;
+    }
+
+    #mainImage {
+        margin: 2% 0;
     }
 
     .image {
@@ -132,5 +164,12 @@ main .mainTextAndImage {
         flex-flow: column wrap;
         justify-content: center;
         align-content: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #mainImage {
+        max-width: 350px;
+        margin: 5% 0;
     }
 }
