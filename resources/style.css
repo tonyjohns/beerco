@@ -181,16 +181,25 @@ main .mainText {
 
 /*Item List*/
 
-main .list {
+main #list {
     margin: 2% 0%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.show {
+    display: block;
+}
+
 main .listItem {
     width: 200px;
-    display: block;
     border: 2px solid black;
     margin: 2% 2%;
     padding: 1% 1%;
@@ -201,10 +210,7 @@ main .listImage {
     width: 100%;
 }
 
-main .listTitle {
-
-}
-
 main .listDescription {
     margin: 5% 0;
 }
+
