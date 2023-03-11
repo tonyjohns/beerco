@@ -34,7 +34,7 @@ p {
 }
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /*Header*/
@@ -89,7 +89,7 @@ nav a:hover {
         margin-bottom: 5%;
         justify-content: start;
     }
-    
+
     header #logo {
         display: none;
     }
@@ -157,7 +157,7 @@ main .mainText {
     main {
         margin: 0% 10%;
     }
-    
+
     main .mainTextAndImage {
         display: block;
     }
@@ -198,31 +198,33 @@ main #list {
     display: block;
 }
 
-main .listItem {
-    width: 200px;
-    border: 2px solid black;
-    margin: 2% 2%;
-    padding: 1% 1%;
-    border-radius: 10px;
-}
+main {
+    .listItem {
+        width: 200px;
+        border: 2px solid black;
+        margin: 2% 2%;
+        padding: 1% 1%;
+        border-radius: 10px;
+    }
 
-main .listImage {
-    width: 75%;
-}
+    .listImage {
+        width: 75%;
+    }
 
-main .imageListBox {
-    text-align: center;
-}
+    .imageListBox {
+        text-align: center;
+    }
 
-main .listDescription {
-    font-size: 16px;
-    margin: 5% 0;
-}
+    .listDescription {
+        font-size: 16px;
+        margin: 5% 0;
+    }
 
-main .showMoreButtonCase {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .showMoreButtonCase {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 button {
@@ -247,7 +249,7 @@ button:hover {
 button:active {
     right: 5px;
     bottom: 5px;
-    box-shadow: 
+    box-shadow:
         -4px -2px 1px 1px grey,
         -4px -2px 1px 1px lightgray,
         4px 0px 1px 1px lightgray;
@@ -262,25 +264,25 @@ button:active {
     margin: 5% 0;
     display: flex;
     justify-content: center;
-  }
-  
-  .gallery-slide {
+}
+
+.gallery-slide {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-  }
-  
-  .gallery-slide img {
+}
+
+.gallery-slide img {
     width: auto;
     height: 100%;
     object-fit: cover;
     transition: all 0.5s ease-in-out;
     border-radius: 10px;
-  }
-  
-  .prev,
-  .next {
+}
+
+.prev,
+.next {
     color: rgb(80, 80, 80);
     position: absolute;
     top: 50%;
@@ -293,42 +295,42 @@ button:active {
     border-radius: 50%;
     border: none;
     outline: none;
-  }
-  
-  .prev:hover,
-  .next:hover {
+}
+
+.prev:hover,
+.next:hover {
     border: 2px solid black;
     color: rgb(80, 80, 80);
-  }
-  
-  .prev {
+}
+
+.prev {
     left: 0;
-  }
-  
-  .next {
+}
+
+.next {
     right: 0;
-  }
-  
-  .active {
+}
+
+.active {
     transform: scale(1.1);
-  }
+}
 
-  /*Footer*/ 
+/*Footer*/
 
-  footer .contacts {
-    margin: 2% 5%;    
-  }
+footer .contacts {
+    margin: 2% 5%;
+}
 
-  .phone {
+.phone {
     font-weight: 900;
-  }
+}
 
-  .social {
+.social {
     display: flex;
     justify-content: center;
-  }
+}
 
-  .socialImg {
+.socialImg {
     width: 30px;
     padding: 0 10px;
-  }
+}
