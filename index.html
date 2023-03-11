@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="./resources/style.css">
+    <link rel="stylesheet" href="./build/style.css">
     <title>BeerCo🥰</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
                  <li><a href="#aboutUs">About us</a></li>
                  <li><a href="#itemListH2">Beers</a></li>
                  <li><a href="#slider">Gallery</a></li>
-                 <li><a href="">Contacts</a></li>
+                 <li><a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
     </header>
@@ -93,14 +93,33 @@
         <h2 id="slider">Team and Factory</h2>
         <div class="gallery-container">
             <div class="gallery-slide">
-              <img src="./resources/images/image-team-1.jpg">
-              <img src="./resources/images/image-team-2.jpg">
-              <img src="./resources/images/image-team-3.jpg">
-              <img src="./resources/images/image-team-4.jpg">
+              <img src="./resources/images/image-team-1.jpg" alt="team BeerCo">
+              <img src="./resources/images/image-team-2.jpg" alt="team beerco">
+              <img src="./resources/images/image-team-3.jpg" alt="team beerco">
+              <img src="./resources/images/image-team-4.jpg" alt="team beerco">
             </div>
             <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
             <a class="next" onclick="plusSlide(1)">&#10095;</a>
           </div>
+
+        <!--Contact Info-->
+        <footer>
+            
+            <h2 id="contacts">How to find us</h2>
+            <div class="contacts">
+                <h3>Wanna connect or cooperate?</h3>
+                <p>Write us via:</p>
+                <p>Email | <a href="mailto:olehgdunya@beerco.com">olehgdunya@beerco.com</a></p>
+                <p>Phone | <span class="phone">+1238 74 78</span> (for US) / <span class="phone">+3802 9287 29</span> (for UK)</p> 
+            </div>
+
+            <div class="social">
+                <a href="https://www.youtube.com/"><img class="socialImg" src="./resources/images/social/youtube.png" alt="social youtube"></a>
+                <a href="https://web.telegram.org/"><img class="socialImg" src="./resources/images/social/telegram.png" alt="social tg" ></a>
+                <a href="https://www.facebook.com/"><img class="socialImg" src="./resources/images/social/facebook.png" alt="social FB"></a>
+            </div>
+            <p><center>Copyright by BeerCo INC 2032</center></p>
+        </footer>     
     </main>
 
     <script src="./main.js"></script>
