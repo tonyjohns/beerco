@@ -299,8 +299,13 @@ button:active {
 
 .prev:hover,
 .next:hover {
-    border: 2px solid black;
+    border: 2px solid rgb(80, 80, 80);
     color: rgb(80, 80, 80);
+}
+
+.prev:active,
+.next:active {
+    background-color: #ffaa0b;
 }
 
 .prev {
@@ -312,7 +317,7 @@ button:active {
 }
 
 .active {
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 
 /*Footer*/
